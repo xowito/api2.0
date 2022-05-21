@@ -1,0 +1,32 @@
+GET http://localhost:3000/sucursal
+### Obteniendo usuarios
+GET http://localhost:3000/instrumento
+
+
+
+### obteniendo un unico ususario
+
+GET http://localhost:3000/instrumento/2
+
+### Creando usuarios
+
+POST http://localhost:3000/instrumento
+Content-Type: application/json
+
+{
+    "nombre": "Microfono",
+    "stock": "600"
+}
+
+### Borrando un usuario
+DELETE http://localhost:3000/instrumento/5
+
+
+### Modificando un usuario
+PUT http://localhost:3000/instrumento/6
+Content-Type: application/json
+
+{
+    "nombre": "Bateria",
+    "stock": 500
+}
