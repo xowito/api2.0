@@ -8,6 +8,9 @@ GET http://localhost:3000/instrumento
 
 GET http://localhost:3000/instrumento/2
 
+### Obtener por sucursal
+GET http://localhost:3000/get_by_almacen/2
+
 ### Creando usuarios
 
 POST http://localhost:3000/instrumento

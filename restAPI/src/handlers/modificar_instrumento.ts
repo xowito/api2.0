@@ -10,7 +10,7 @@ export async function modificar_instrumento({request, params , response}: any) {
         const instrumento: any = await body.value;
 
         response.status =200;
-        response.body = await update(instrumento.nombre, instrumento.stock, params.id)
+        response.body = await update(instrumento.nombre, instrumento.stock, instrumento.precio, params.id)
         
     } else {
         response.status = 404;
