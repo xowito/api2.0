@@ -1,24 +1,25 @@
-GET http://localhost:3000/sucursal
+GET http://localhost:3000/almacen
 ### Obteniendo usuarios
 GET http://localhost:3000/instrumento
 
 
 
+
 ### obteniendo un unico ususario
 
-GET http://localhost:3000/instrumento/2
+GET http://localhost:3000/instrumento/3
 
 ### Obtener por sucursal
-GET http://localhost:3000/get_by_almacen/2
+GET http://localhost:3000/get_by_almacen/3
 
 ### Creando usuarios
 
-POST http://localhost:3000/instrumento
+POST http://localhost:3000/almacen
 Content-Type: application/json
 
 {
-    "nombre": "Microfono",
-    "stock": "600"
+    "nombre_almacen": "Concepcion",
+    "tipo_estructura": "Sucursal"
 }
 
 ### Borrando un usuario
@@ -26,10 +27,11 @@ DELETE http://localhost:3000/instrumento/5
 
 
 ### Modificando un usuario
-PUT http://localhost:3000/instrumento/6
+PUT http://localhost:3000/instrumento/4
 Content-Type: application/json
 
 {
     "nombre": "Bateria",
-    "stock": 500
+    "stock": 100,
+    "precio": 6000
 }
